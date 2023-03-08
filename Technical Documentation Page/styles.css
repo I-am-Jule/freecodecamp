@@ -1,0 +1,150 @@
+html{
+    height:100%;
+    font-size: 10pt;
+}
+
+#navbar {
+    position: fixed;
+    min-width: 200px;
+    top: 0px;
+    left: 0px;
+    width: 220px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/geometric-leaves.png");
+    height: 100%;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+/* List has no bullets, margins or padding */
+.navul {
+    list-style-type: none;
+    margin: 5px;
+    padding: 5px;
+}
+
+#navheader {
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.5rem;
+    color: #950095;
+    margin: 5px;
+    padding: 5px;
+    border-bottom: 1px dotted;
+}
+
+#navbar a {
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.1rem;
+    color: #959563;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+    border-bottom: 1px dotted;
+}
+  
+#navbar a:hover {
+    color: #950095;
+    border-bottom: 1px dotted;
+}
+  
+#main-doc {
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 210px;
+    padding: 0px 20px;
+    margin-bottom: 110px;
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+#main-doc header {
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.5rem;
+    color: #950095;
+    border-bottom: 1px dotted;
+    padding-bottom: 5px;
+    padding-top: 2px;
+}
+  
+code {
+    display: block;
+    text-align: left;
+    position: relative;
+    color: #950095;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 2px;
+}
+
+@media (min-width: 601px) {
+  .top {
+    display:none;
+  }
+}
+
+@media (max-width: 600px) {
+    #navbar {
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        border-bottom: 2px solid;
+        max-height: 200px;
+        z-index: 1;
+    }
+    #navbar header {
+        font-size: 1rem
+    }
+    #navbar ul {
+        font-size: 0.8rem;
+        height: 150px;
+    }
+    #navbar li {
+        font-size: 0.8rem;
+        padding: 0;
+        margin: 0;
+    }
+    #navbar a {
+        font-size: 0.8rem
+    }
+    p {
+        font-size: 0.8rem
+    }
+    code {
+        font-size: 0.8rem
+    }
+    #main-doc {
+        position: relative;
+        margin-top:220px;
+        margin-left: -15px;
+        width: 100%;
+    }
+    #main-doc header {
+        font-size: 1rem
+    }
+    #main-doc li {
+        font-size: 0.8rem
+    }
+
+    .top {
+    display:visibility;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    color: #950095;
+    background: #f7f7f7;
+    border-style:solid;
+    border-color: #950095;
+    border-width: 1px;
+    border-radius: 30%;
+    position: sticky;
+    bottom: 10px;
+    --offset: 50px; 
+    margin-top: calc(100vh + var(--offset));
+    margin-left: calc(100vw - 70px);
+    }
+}
+
